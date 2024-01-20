@@ -22,10 +22,6 @@ curl “http://127.0.0.1:5000/chair?charNo=1&is_used=1”
     )
 ```
 
-id	charNo	is_used
-1	1	0
-2	2	0
-3	3	0
 
 
 - DBスキーマ
