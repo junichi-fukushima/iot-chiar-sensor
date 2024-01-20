@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>空席管理システム</title>
+</head>
+<body>
+    <h1>空席状況</h1>
+    <table>
+        <tr>
+            <th>char1</th>
+            <th>char2</th>
+            <th>char3</th>
+        </tr>
+        <tr>
+                    <!-- 実際にはこっちを使う -->
+        <!-- {% for chair in chairs %}
+            <li>{{ chair[0] }}: {{ '○' if chair[1] == 1 else '×' }}</li>
+        {% endfor %} -->
+            <td>
+                ○<br>
+                <span class="status">空席あり</span>
+            </td>
+            <td>
+                ×<br>
+                <span class="status">使用中</span>
+            </td>
+            <td>
+                ×<br>
+                <span class="status">使用中</span>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
