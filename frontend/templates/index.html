@@ -2,9 +2,22 @@
 <head>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
     <title>空席管理システム</title>
+    <script>
+        <!-- 2秒ごとにリロードして、空席情報を更新 -->
+        setTimeout(function () {
+            location.reload()
+        }, 1000);
+    </script>
 </head>
 <body>
     <h1>空席状況</h1>
+    <div class="seating-plan">
+	    {% for chair in chairs %}
+	        <div class="seat {% if chair['is_used'] == 1 %}occupied{% else %}empty{% endif %}">
+	            <p>{{ chair["charNo"] }}</p>
+	        </div>
+	    {% endfor %}
+	</div>
     <table>
         <tr>
             <th>椅子番号</th>
