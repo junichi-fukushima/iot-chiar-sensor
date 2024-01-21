@@ -8,6 +8,7 @@ body {
 
 h1 {
   color: #333;
+  padding-top: 20px;
 }
 
 table {
@@ -25,4 +26,30 @@ th, td {
 .status {
   font-size: 0.8em;
   color: #666;
+}
+.seating-plan {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.seat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 40px;
+    border: 1px solid #BFC5CA;
+    text-align: center;
+    padding: 10px;
+    background-color: #659AD2;
+}
+
+.occupied {
+    background-color: #E3E3E3; /* 使用中の席の色 */
+}
+div {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
